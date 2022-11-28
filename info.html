@@ -3,12 +3,13 @@
 
 <head>
     <title>Kanok Project</title>
+    <link rel="icon" type="image/x-icon" href="/logo.png">
     <meta charset="utf-8" />
     <style>
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-
+            background-image: url('./blue-black-white-abstract-tiles-4k-02.jpg');
             background-repeat: no-repeat;
             background-size: 100%;
             background-color: rgb(251, 251, 251);
@@ -20,7 +21,7 @@
 
         .topnav {
             overflow: hidden;
-            background-color: rgb(54, 58, 63);
+            background-color: rgb(0, 0, 0);
         }
 
         .topnav a {
@@ -38,28 +39,66 @@
         }
 
         .topnav a.active {
-            background-color: #275a7d;
+            background-color: #0b3c85;
             color: white;
+        }
+
+        section {
+            display: -webkit-flex;
+            display: flex;
+        }
+
+        article {
+            -webkit-flex: 3;
+            -ms-flex: 3;
+            flex: 3;
+            background-color: #f1f1f1;
+            padding: 40px;
+        }
+
+        nav {
+            background: #ccc;
+            padding: 20px;
+
         }
     </style>
 </head>
 
 <body>
+    
     <!--navigater bar-->
     <div class="topnav">
         <a class="active" href="#home">INTRODUCE YOURSELF</a>
-        <a href="#about">ABOUT</a>
-        <a href="#news">SKILLS</a>
-        <a href="#contact">CONTACT</a>
+        <a href="#activity">ACTIVITYS</a>
+        <a href="#other">OTHER</a>
     </div>
 
     <!--home img-->
-    <div>
-        <img src="./สำเนาของ logo avenjuy no txt.png">
-    </div>
+    <section>
+        <nav>
+                <img src="./me.png" width="400" height="500">
+            
 
+        </nav>
 
+        <article>
+            <h1>ABOUT ME</h1>
+            <p>Name : Kanokpol Promtha (Taiy) </p>
+            <p>Student Id : 64160267  </p>
+            <p>Birthday : 06 Jan 2003</p>
+            <p>Study : Informatics, Software Engineering, Burapha University</p>
 
+            <h1>SKILLS</h1>
+            <p>HTML5</p>
+            <p>CSS3</p>
+            <p>C++</p>
+            <p>Java</p>
+            <p>HTML5</p>
+
+            <h1>CONTACT</h1>
+            <p>sefsgshdfgdrgdrgdrgdrgdrgdrgdrgdrgdrgerg4</p>
+        </article>
+    </section>
 
 </body>
 
