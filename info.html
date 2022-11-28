@@ -5,10 +5,11 @@
     <title>Kanok Project</title>
     <link rel="icon" type="image/x-icon" href="/logo.png">
     <meta charset="utf-8" />
+
     <style>
         body {
             margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Times New Roman', Times, serif;
             background-image: url('./blue-black-white-abstract-tiles-4k-02.jpg');
             background-repeat: no-repeat;
             background-size: 100%;
@@ -16,12 +17,22 @@
         }
 
         h1 {
-            color: rgb(7, 7, 7);
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(255, 255, 255);
+            background-color: #0e4ba6;
+            text-align: center;
+
         }
+
+        p {
+            font-size: 18px;
+        }
+
 
         .topnav {
             overflow: hidden;
             background-color: rgb(0, 0, 0);
+
         }
 
         .topnav a {
@@ -46,6 +57,9 @@
         section {
             display: -webkit-flex;
             display: flex;
+            padding-left: 30%;
+            padding-right: 3%;
+            padding-top: 3%;
         }
 
         article {
@@ -53,52 +67,71 @@
             -ms-flex: 3;
             flex: 3;
             background-color: #f1f1f1;
-            padding: 40px;
+            padding: 10px;
+            padding-left: 3%;
+            padding-right: 3%;
+
         }
 
         nav {
             background: #ccc;
             padding: 20px;
-
         }
     </style>
 </head>
 
 <body>
-    
+
     <!--navigater bar-->
     <div class="topnav">
         <a class="active" href="#home">INTRODUCE YOURSELF</a>
         <a href="#activity">ACTIVITYS</a>
-        <a href="#other">OTHER</a>
+        <a href="#coming soon">COMING SOON...</a>
     </div>
 
     <!--home img-->
     <section>
+
         <nav>
-                <img src="./me.png" width="400" height="500">
-            
+            <img src="./me.png" width="400" height="500">
 
         </nav>
 
         <article>
             <h1>ABOUT ME</h1>
-            <p>Name : Kanokpol Promtha (Taiy) </p>
-            <p>Student Id : 64160267  </p>
-            <p>Birthday : 06 Jan 2003</p>
-            <p>Study : Informatics, Software Engineering, Burapha University</p>
+            <p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name :</b> Kanokpol Promtha (taiy) </p>
+            <p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Student Id :</b> 64160267 </p>
+            <p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Birthday : </b>06 Jan 2003</p>
+            <p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Study : </b>Informatics, Software Engineering, Burapha University
+            </p>
+
 
             <h1>SKILLS</h1>
-            <p>HTML5</p>
-            <p>CSS3</p>
-            <p>C++</p>
-            <p>Java</p>
-            <p>HTML5</p>
+
+            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTML5 </p>
+            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS3</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C++ </p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JavaScript</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Python</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R</p>
 
             <h1>CONTACT</h1>
-            <p>sefsgshdfgdrgdrgdrgdrgdrgdrgdrgdrgdrgerg4</p>
+            <p>Tel.Email.Facebook.Ig.</p>
         </article>
     </section>
+
+
+    <p id="demo">JavaScript can change the style of an HTML element.</p>
+
+    <script>
+        function myFunction() {
+            document.getElementById("demo").style.fontSize = "25px";
+            document.getElementById("demo").style.color = "red";
+            document.getElementById("demo").style.backgroundColor = "yellow";
+        }
+    </script>
+
+    <button type="button" onclick="myFunction()">Click Me!</button>
 
 </body>
 
