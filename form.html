@@ -3,22 +3,66 @@
   <head> </head>
 
   <body>
-    <h1>HTML Forms</h1>
-    
-    <form action="/action_page.php">
-      <label for="fname">First name:</label><br>
-      <input type="text" id="fname" name="fname" value="John"><br>
-      <label for="lname">Last name:</label><br>
-      <input type="text" id="lname" name="lname" value="Doe"><br><br>
-      <input type="submit" value="Submit">
-      <input type="password">
-      <input type="reset">
-      <textarea></textarea>
-    </form> 
-    
-    <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
-  
-    
+    <h1 align="center">workshop # html-form</h1>
+    <table>
+        <form>  
+            <tr width="120" align="left">
+                <th><label for="fname">ชื่อ</label></th>
+                <th><input type="text" id="fname" name="fname"></th>
+            </tr>
+            <tr width="100" align="left">
+                <th><label for="lname">สกุล</label></th>
+                <th><input type="text" id="lname" name="lname"></th>
+            </tr>
+            <tr width="120" align="left">
+                <th><label for="data">วัน/เดือน/ปีเกิด</label></th>
+                <th><input type="date" id="data" name="data"></th>
+            </tr>
+            <tr width="120" align="left">
+                <th><label for="age">อายุ</label></th>
+                <th><input type="text" id="age" name="age"></th>
+            </tr>
+            <tr width="120" align="left">
+                <th><label for="sex">เพศ</label></th>
+                <th><input type="radio" id="man" name="sex_language" value="man">
+                    <label for="man">ชาย</label>
+                    <input type="radio" id="woman" name="sex_language" value="woman">
+                    <label for="woman">หญิง</label></th>
+            </tr>
+            <tr width="120" align="left">
+                <th><label for="picture">รูป</label></th>
+                <th> <input type="file" id="myfile" name="myfile"></th>
+            </tr>
+            <tr>    
+                <th width="120" align="left">ที่อยู่</th>
+                <th align="left"><textarea rows="5" cols="25"></textarea></th>
+            </tr>
+            <tr width="120" align="left">
+                <th><label for="picture">สีที่ชอบ</label></th>
+                <th> <select name="color" id="color">
+                    <option value="red">สีแดง</option>
+                    <option value="greem">สีเขียว</option>
+                    <option value="black">สีดำ</option>
+                    <option value="while">สีขาว</option>
+                    <option value="blue">สีน้ำเงิน</option>
+                  </select></th>
+            </tr>
+            <tr width="120" align="left">
+                <th><label for="music">เพลงที่ชอบ</label></th>
+                <th><input type="radio" id="m1" name="m" value="m1">
+                    <label for="man">เพื่อชีวิต</label>
+                    <input type="radio" id="m2" name="m" value="m2">
+                    <label for="woman">ลูกทุ่ง</label>
+                    <input type="radio" id="m2" name="m" value="m3">
+                    <label for="woman">อื่นๆ</label></th>
+            </tr>   
+        </form>
+    </table>
+    <br>
+    <input type="checkbox" id="yes" name="yes" value="yes">  
+    <label for="vehicle1"> ยินยอมให้เก็บข้อมูล</label><br><br>
+    <button type="button">Reset</button>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+    <input type="button" value="Submit"><br>
 
   </body>
 </html>
