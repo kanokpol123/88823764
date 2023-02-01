@@ -12,7 +12,7 @@ class RegisterController extends MyController
     function index(){
         $data['name'] = "this is  my controller : ";
 
-        //$users = DB::select('SELECT * FROM users;');
+        $users = DB::select('SELECT * FROM users;');
         $data['users'] = $users;
 
         return parent::output('form/register', $data);
@@ -44,7 +44,7 @@ class RegisterController extends MyController
 
     public function edit($id){
 
-        //$user = DB::select('SELECT * FROM users WHERE id= ?',[$id]);
+        $user = DB::select('SELECT * FROM users WHERE id= ?',[$id]);
         $data['user'] = $user[0];
 
         return parent::output('form/register_edit', $data);
