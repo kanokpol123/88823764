@@ -8,6 +8,6 @@
 </head>
 <body>
 <h1>Hi,{{$name}}</h1>
-<button>Click me</button>
+<button href="{{ url('/my-controller') }}" >Click me</button>
 </body>
 </html>
