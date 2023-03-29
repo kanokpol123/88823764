@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 960px;;
+     margin: 0 auto;
+    color: blueviolet;
+    background-color: cadetblue;
+    overflow: hidden;
+}
+.clearfix{
+    clear: both;
+}
+
+header{
+    text-align: center;
+    width: 880px;
+    height: 150px;
+    background: yellow;
+    margin: 0 auto;
+}
+section{
+    margin-left: 41px;
+    margin-top:  20px;
+    text-align: center;
+    width : 545px;
+    height : 700px;
+    background-color: black;
+    float: left;
+}
+aside{
+    margin-top: 20px;
+    margin-left: 25px;
+    width : 305px;
+    height : 700px;
+    text-align: center;
+    background: blue;
+    float: left;
+}
+footer{
+    background: red;
+    width: 880px;
+    height: 50px;
+    margin: 10px auto;
+}
