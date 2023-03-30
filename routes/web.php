@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/*
 Route::get('/', function () {
     return view('home');
 });
@@ -24,4 +25,11 @@ Route::get('/my-controller', [IndexController::class,'show']);
 
 Route::post('/my-controller', function(){
     return "name";
-});
+});*/
+
+
+Route::get('/', [CampTestController::class,'home']);
+
+Route::get('/camp-form-list', [CampTestController::class,'form_list']);
+
+Route::get('/about-me', [CampTestController::class,'about_me']);
