@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,6 +26,7 @@
 </head>
 
 <body>
+
     <div class="container">
         <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
             <a href="/"
@@ -44,32 +46,41 @@
         </header>
 
         <!---------------form-list-->
-        <form action="/my-form" method="post">
+        <form action="/show-camp-form" method="Post">
+            @csrf
+            <div class="form-name">
+                <label for="inputName">ชื่อ</label>
+                <input type="name" class="form-control" id="name" placeholder="กรุณาใส่ชื่อ">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+
+
+        <form action="/submit" method="Post">
             @csrf
             <!--section 1 -->
             <div class="information">
                 <!--name -->
                 <div class="form-name">
                     <label for="inputName">ชื่อ</label>
-                    <input type="name" class="form-control" id="inputName" name="name" placeholder="กรุณาใส่ชื่อ">
+                    <input type="name" class="form-control" id="name" placeholder="กรุณาใส่ชื่อ">
                 </div>
                 <!--lastname -->
                 <div class="form-lastname">
                     <label for="inputLastname">นามสกุล</label>
-                    <input type="lastname" class="form-control" id="inputLastname" name="lastname"
+                    <input type="lastname" class="form-control" id="lastname"
                         placeholder="กรุณาใส่นามสกุล">
                 </div>
                 <!--radioGender -->
                 <div class="form-gender">
                     <label for="inputGender">เพศ</label>
                     <div class="form-men">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="gender1">
                         <label class="form-check-label" for="flexRadioDefault1">
                             ชาย
                         </label>
                     </div>
                     <div class="form-women">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="gender2"
                             checked>
                         <label class="form-check-label" for="flexRadioDefault2">
                             หญิง
@@ -86,8 +97,7 @@
                 <!--email -->
                 <div class="form-email">
                     <label for="inputEmail4">Email address</label>
-                    <input type="email" class="form-control" id="inputEmail" name="email"
-                        placeholder="กรุณาใส่Email">
+                    <input type="email" class="form-control" id="email" placeholder="กรุณาใส่Email">
                 </div>
 
                 <!--cluster -->
@@ -105,13 +115,13 @@
                         <option value="8">มกุล 7</option>
                         <option value="9">มกุล 8</option>
                         <option value="10">มกุล 9</option>
-                      </select>
+                    </select>
                 </div>
                 <!--detail -->
                 <div class="detail">
                     <label for="inutDetail" class="form-label">รายละเอียดอื่นๆ</label>
                     <textarea class="form-control" id="detail" rows="3"></textarea>
-                  </div>
+                </div>
 
 
             </div>
@@ -125,6 +135,8 @@
                     </label>
                 </div>
             </div>
+            <a href="{{ url('/forgot-password') }}" >   reset</a>
+            <button type="button" class="reset-btn">Custom Reset Button</button>
 
             <button type="submit" class="btn btn-primary">Sign in</button>
         </form>
@@ -138,7 +150,8 @@
             <div class="nav col-md-4 justify-content-end list-unstyled d-flex">
                 รหัสนิสิต 64160267 ชื่อ กนกพล พรหมทา
             </div>
-        </footer><footer class="my-5 pt-5 text-muted text-center text-small">
+        </footer>
+        <footer class="my-5 pt-5 text-muted text-center text-small">
             <p class="mb-1">© 2017-2019 Company Name</p>
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="#">Privacy</a></li>

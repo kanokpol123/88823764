@@ -35,4 +35,7 @@ Route::get('/camp-form-list', [CampTestController::class,'form_list']);
 Route::get('/about-me', [CampTestController::class,'about_me']);
 
 
-Route::post('/my-form/{name}', [FormController::class,'submit']);
+
+Route::post('/show-camp-form', [FormController::class, 'submit']);
+
+//Route::get('/show-camp-form/{id}', [FormController::class, 'display']);
