@@ -21,3 +21,7 @@ Route::get('/', [IndexController::class,'index']);
 
 
 Route::get('/my-controller', [IndexController::class,'show']);
+
+Route::post('/my-controller', function(){
+    return "POST";
+});
