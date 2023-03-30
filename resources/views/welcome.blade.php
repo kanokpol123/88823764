@@ -62,16 +62,18 @@
 
 
     <main class="form-signin w-100 m-auto">
-      <form>
+        <form action="/my-controller" method="post">
+            @csrf
+
         <img class="mb-4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkUW8dDxhrrOjTjLIh6WPv7iCZgHGEBPObcOHCRsOwiALO1zgnjTWjil4_8BLeFCsB7Sk&usqp=CAU" alt="" width="72" height="57">
         <h1 class="h3 mb-3 fw-normal">Please kill me</h1>
 
         <div class="form-floating">
-          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <input type="email" name = "user" class="form-control" id="floatingInput" placeholder="name@example.com">
           <label for="floatingInput">Email address</label>
         </div>
         <div class="form-floating">
-          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <input type="password" name = "password" class="form-control" id="floatingPassword" placeholder="Password">
           <label for="floatingPassword">Password</label>
         </div>
 

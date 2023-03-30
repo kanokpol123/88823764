@@ -13,4 +13,13 @@ class IndexController extends Controller
     public function show(){
         return view('welcome');
     }
+    public function submit(Request $req)
+    {
+        $fname = $req->input('fname');
+        $lname = $req->input('lname');
+        $data = [ 'fname' => $fname, 'lname' => $lname ];
+        return view('welcome', $data);
+        // echo "fname : ".$fname."<br>";
+        // echo "lname : ".$lname."<br>";
+    }
 }
