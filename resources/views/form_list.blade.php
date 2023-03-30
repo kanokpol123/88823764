@@ -130,7 +130,15 @@
         </form>
         <!--end-->
 
-        <footer class="my-5 pt-5 text-muted text-center text-small">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <span class="mb-3 mb-md-0 text-body-secondary">มกุล 1 © 2023</span>
+            </div>
+
+            <div class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                รหัสนิสิต 64160267 ชื่อ กนกพล พรหมทา
+            </div>
+        </footer><footer class="my-5 pt-5 text-muted text-center text-small">
             <p class="mb-1">© 2017-2019 Company Name</p>
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="#">Privacy</a></li>
@@ -141,15 +149,8 @@
     </div>
 
 
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-            <span class="mb-3 mb-md-0 text-body-secondary">มกุล 1 © 2023</span>
-        </div>
 
-        <div class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            รหัสนิสิต 64160267 ชื่อ กนกพล พรหมทา
-        </div>
-    </footer>
+
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
