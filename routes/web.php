@@ -33,3 +33,6 @@ Route::get('/', [CampTestController::class,'home']);
 Route::get('/camp-form-list', [CampTestController::class,'form_list']);
 
 Route::get('/about-me', [CampTestController::class,'about_me']);
+
+
+Route::post('/my-form/{name}', [FormController::class,'submit']);
